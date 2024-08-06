@@ -1,13 +1,15 @@
 {
-    "id": "faq_accordion-84fd2856-153a-537d-4885-e34726785dac",
+    "id": "faq_accordion_1722933823",
     "name": "faq_accordion",
     "type": "containerComponent",
-    "metadata": {},
+    "metadata": {
+        "markdownText": "Vue.component('faq_accordion_1722933823', {\n  template: `\n    <div>\n      <section class=\"leading-relaxed max-w-screen-xl mt-12 mx-auto px-4 md:px-8 bg-white\">\n        <div class=\"space-y-3 text-center\">\n          <h1 class=\"text-4xl text-gray-800 font-semibold pt-10\">Frequently Asked Questions</h1>\n          <p class=\"text-gray-600 max-w-lg mx-auto text-lg\">Everything you need to know about our blockchain analysis app</p>\n        </div>\n        <div class=\"mt-14 max-w-2xl mx-auto\">\n          <div v-for=\"(item, index) in faqs\" :key=\"index\" class=\"space-y-5 mt-5 overflow-hidden border-b border-gray-200 hover:bg-gray-50 cursor-pointer\" @click=\"toggleFaq(index)\">\n            <h4 class=\"cursor-pointer pb-5 flex items-center justify-between text-lg text-gray-700 font-medium\">\n              { item.q }\n              <svg v-if=\"selectedFaq === index\" xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-gray-500 ml-2\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M20 12H4\"/></svg>\n              <svg v-else xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-gray-500 ml-2\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 4v16m8-8H4\"/></svg>\n            </h4>\n            <div v-show=\"selectedFaq === index\" style=\"overflow: hidden; transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;\" :style=\"{ maxHeight: selectedFaq === index ? '1000px' : '0px', opacity: selectedFaq === index ? 1 : 0 }\">\n              <div class=\"px-4 py-6\">\n                <p class=\"text-gray-700 pb-4 max-w-full text-lg\">{ item.a }</p>\n              </div>\n            </div>\n            <br/><br/>\n          </div>\n        </div>\n      </section>\n    </div>\n  `,\n  delimiters: ['{', '}'],\n  data() {\n    return {\n      selectedFaq: null,\n      faqs: [\n        {\n          q: \"What does this blockchain analysis app do?\",\n          a: \"Our app analyzes new blockchain information in real-time, providing users with valuable insights and data about the latest transactions, smart contracts, and network activities.\"\n        },\n        {\n          q: \"How often is the blockchain data updated?\",\n          a: \"Our app continuously monitors blockchain networks and updates information in real-time, ensuring you always have access to the most current data available.\"\n        },\n        {\n          q: \"Which blockchains does the app support?\",\n          a: \"Currently, our app supports major blockchains such as Bitcoin, Ethereum, and Binance Smart Chain. We're constantly working on adding support for more networks.\"\n        },\n        {\n          q: \"Can I customize the analysis parameters?\",\n          a: \"Yes, our app offers customizable analysis parameters, allowing you to focus on specific aspects of blockchain data that are most relevant to your needs and interests.\"\n        },\n        {\n          q: \"Is there an API available for developers?\",\n          a: \"Absolutely! We offer a robust API for developers, enabling you to integrate our blockchain analysis capabilities into your own applications and services.\"\n        }\n      ]\n    }\n  },\n  methods: {\n    toggleFaq(index) {\n      this.selectedFaq = this.selectedFaq === index ? null : index;\n    }\n  }\n});"
+    },
     "w": 7,
     "h": 7,
-    "x": "50",
-    "y": "50",
-    "i": "__dropping-elem__",
+    "x": 2,
+    "y": 16,
+    "i": "4",
     "minW": 3,
     "maxW": 12,
     "minH": 1,
