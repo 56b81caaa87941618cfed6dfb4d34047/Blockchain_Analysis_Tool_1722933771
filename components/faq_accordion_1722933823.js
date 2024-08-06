@@ -3,8 +3,8 @@ Vue.component('faq_accordion_1722933823', {
     <div>
       <section class="leading-relaxed max-w-screen-xl mt-12 mx-auto px-4 md:px-8 bg-white">
         <div class="space-y-3 text-center">
-          <h1 class="text-4xl text-gray-800 font-semibold pt-10">FAQ_TITLE_PLACEHOLDER_TEXT</h1>
-          <p class="text-gray-600 max-w-lg mx-auto text-lg">FAQ_SUBTITLE_PLACEHOLDER_TEXT</p>
+          <h1 class="text-4xl text-gray-800 font-semibold pt-10">Frequently Asked Questions</h1>
+          <p class="text-gray-600 max-w-lg mx-auto text-lg">Everything you need to know about our blockchain analysis app</p>
         </div>
         <div class="mt-14 max-w-2xl mx-auto">
           <div v-for="(item, index) in faqs" :key="index" class="space-y-5 mt-5 overflow-hidden border-b border-gray-200 hover:bg-gray-50 cursor-pointer" @click="toggleFaq(index)">
@@ -30,24 +30,24 @@ Vue.component('faq_accordion_1722933823', {
       selectedFaq: null,
       faqs: [
         {
-          q: "FAQ_PLACEHOLDER_QUESTION_TEXT_1",
-          a: "FAQ_PLACEHOLDER_ANSWER_TEXT_1"
+          q: "What does this blockchain analysis app do?",
+          a: "Our app analyzes new blockchain information in real-time, providing users with valuable insights and data about the latest transactions, smart contracts, and network activities."
         },
         {
-          q: "FAQ_PLACEHOLDER_QUESTION_TEXT_2",
-          a: "FAQ_PLACEHOLDER_ANSWER_TEXT_2"
+          q: "How often is the blockchain data updated?",
+          a: "Our app continuously monitors blockchain networks and updates information in real-time, ensuring you always have access to the most current data available."
         },
         {
-          q: "FAQ_PLACEHOLDER_QUESTION_TEXT_3",
-          a: "FAQ_PLACEHOLDER_ANSWER_TEXT_3"
+          q: "Which blockchains does the app support?",
+          a: "Currently, our app supports major blockchains such as Bitcoin, Ethereum, and Binance Smart Chain. We're constantly working on adding support for more networks."
         },
         {
-          q: "FAQ_PLACEHOLDER_QUESTION_TEXT_4",
-          a: "FAQ_PLACEHOLDER_ANSWER_TEXT_4"
+          q: "Can I customize the analysis parameters?",
+          a: "Yes, our app offers customizable analysis parameters, allowing you to focus on specific aspects of blockchain data that are most relevant to your needs and interests."
         },
         {
-          q: "FAQ_PLACEHOLDER_QUESTION_TEXT_5",
-          a: "FAQ_PLACEHOLDER_ANSWER_TEXT_5"
+          q: "Is there an API available for developers?",
+          a: "Absolutely! We offer a robust API for developers, enabling you to integrate our blockchain analysis capabilities into your own applications and services."
         }
       ]
     }
