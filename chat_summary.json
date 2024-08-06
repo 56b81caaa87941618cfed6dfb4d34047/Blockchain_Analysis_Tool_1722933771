@@ -18,5 +18,11 @@
         "content": "Definitely! Adding a button with text \"Hello World\".",
         "timestamp": "06082024084316",
         "message_id": "guest06082024084315"
+    },
+    {
+        "role": "chat_ui_checklist",
+        "content": "{\"status\": \"success\", \"ui_elements_checklist\": [{\"feature\": \"Real-time blockchain data updates toggle\", \"checked\": true}, {\"feature\": \"Interactive blockchain analytics charts\", \"checked\": false}, {\"feature\": \"Customizable alerts for specific blockchain events\", \"checked\": true}, {\"feature\": \"Search functionality for blockchain transactions\", \"checked\": true}, {\"feature\": \"Dark and light mode UI options\", \"checked\": false}, {\"feature\": \"Multi-language support for global users\", \"checked\": false}], \"input_token_count\": 215, \"output_token_count\": 95, \"time_taken\": \"0:00:06.169748\"}",
+        "timestamp": "06082024084322",
+        "message_id": "guest06082024084315"
     }
 ]
